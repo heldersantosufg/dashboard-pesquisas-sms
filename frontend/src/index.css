@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+/*
+ * Rampa "marca": azul de referência já validado para gráficos (contraste e
+ * daltonismo). Quando a identidade visual oficial do Município/SMS estiver
+ * disponível, troque os valores mantendo os nomes e revalide o contraste.
+ */
+@theme {
+  --color-marca-100: #cde2fb;
+  --color-marca-150: #b7d3f6;
+  --color-marca-200: #9ec5f4;
+  --color-marca-250: #86b6ef;
+  --color-marca-300: #6da7ec;
+  --color-marca-350: #5598e7;
+  --color-marca-400: #3987e5;
+  --color-marca-450: #2a78d6;
+  --color-marca-500: #256abf;
+  --color-marca-550: #1c5cab;
+  --color-marca-600: #184f95;
+  --color-marca-650: #104281;
+  --color-marca-700: #0d366b;
+
+  /* Cor única das séries dos gráficos e sua versão destacada (hover/foco). */
+  --color-serie: var(--color-marca-450);
+  --color-serie-ativa: var(--color-marca-550);
+}
+
+@layer base {
+  body {
+    @apply bg-slate-100 text-slate-900 antialiased;
+  }
+
+  /* O preflight do Tailwind v4 deixa botões com o cursor padrão. */
+  button:not(:disabled) {
+    cursor: pointer;
+  }
+}

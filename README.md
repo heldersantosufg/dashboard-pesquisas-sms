@@ -64,6 +64,15 @@ Entrega prevista: **15/11/2026**.
 - [Regras de negócio](docs/regras-de-negocio.md)
 - [Pendências para validação](docs/pendencias-validacao.md)
 - [Protótipo e identidade visual](prototipo/README.md)
+- [Frontend (React + TypeScript + Tailwind)](frontend/README.md)
+
+## Executar o frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
 ## Estrutura do repositório
 
@@ -81,6 +90,7 @@ dashboard-pesquisas-sms/
 │   └── caso-de-uso/
 ├── dados/
 │   └── README.md
+├── frontend/          # interface do dashboard (Vite + React + TypeScript + Tailwind)
 └── prototipo/
     └── README.md
 ```
